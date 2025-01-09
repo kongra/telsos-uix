@@ -1,0 +1,10 @@
+{:deps     true
+ :dev-http {3000 "public"}
+
+ :nrepl {:port 3333}
+
+ :builds
+ {:app
+  {:target   :browser
+   :modules  {:main {:entries [telsos.ui.core] :init-fn telsos.ui.core/init}}
+   :devtools {:preloads [uix.preload devtools.preload]}}}}

@@ -1,5 +1,5 @@
-# telsos-ui
-A template for ClojureScript ui application
+# telsos-uix
+A template for ClojureScript uix application
 
 ## Copyright
 Copyright (c) 2021-2025 Kongra Konrad Grzanek.

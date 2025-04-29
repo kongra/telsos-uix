@@ -1,5 +1,5 @@
 # telsos-uix
-A template for ClojureScript uix application
+A template for ClojureScript + uix + shadow-cljs + tailwind projects
 
 ## Copyright
 Copyright (c) 2021-2025 Kongra Konrad Grzanek.

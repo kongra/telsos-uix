@@ -24,7 +24,7 @@
 
     ($ :div.ui-app
        {:class cls
-        :on-click #(set-n! (+ 3 n))}
+        :on-click #(set-n! (inc n))}
 
        ($ :h1 (str "Hello, UIx! " n))
        ($ ui-vspace {:height 58}))))

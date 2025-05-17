@@ -20,7 +20,7 @@
         (into ui-app-class
               (if (even? n)
                 #{"text-blue-500" "text-2xl"}
-                #{"text-red-500"  "text-3xl"}))]
+                #{"text-red-500"  "text-2xl"}))]
 
     ($ :div.ui-app
        {:class cls

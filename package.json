@@ -2,7 +2,9 @@
   "name": "telsos-uix",
   "scripts": {
     "dev": "shadow-cljs -A:dev watch dev",
-    "release": "shadow-cljs -A:dev release dev"
+    "release": "shadow-cljs -A:dev release release && npm run compress",
+    "compress": "gzip -k -f public/js/main.js && brotli -k -f public/js/main.js",
+    "build": "shadow-cljs -A:dev compile release"
   },
   "devDependencies": {
     "onchange": "^7.1.0",

@@ -10,4 +10,21 @@
  {:dev
   {:target   :browser
    :modules  {:main {:entries [telsos.ui.core] :init-fn telsos.ui.core/init}}
-   :devtools {:preloads [uix.preload devtools.preload]}}}}
+   :devtools {:preloads [uix.preload devtools.preload]}}
+
+  :release
+  {:target           :browser
+   :output-dir       "public/js"
+   :asset-path       "/js"
+   :modules          {:main {:entries [telsos.ui.core] :init-fn telsos.ui.core/init}}
+   :compiler-options {:optimizations :advanced
+                      :infer-externs :auto
+                      :externs       ["externs.js"]
+                      :source-map    false
+                      :pretty-print  false
+                      :pseudo-names  false
+                      :elide-asserts true
+                      :warnings      {:fn-deprecated false}}
+   :closure-defines  {'goog.DEBUG false}
+   :build-options    {:manifest-name  "manifest.edn"
+                      :output-wrapper true}}}}

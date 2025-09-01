@@ -1,7 +1,7 @@
 {:deps
  {org.clojure/clojure          {:mvn/version "1.12.2"}
   org.clojure/clojurescript    {:mvn/version "1.12.42"}
-  com.github.kongra/telsos-lib {:mvn/version "0.1.487"}
+  com.github.kongra/telsos-lib {:mvn/version "0.1.490"}
   com.pitch/uix.core           {:mvn/version "1.4.4"}
   com.pitch/uix.dom            {:mvn/version "1.4.4"}}
 

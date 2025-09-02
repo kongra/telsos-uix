@@ -4,7 +4,9 @@
     "dev": "shadow-cljs -A:dev watch dev",
     "release": "shadow-cljs -A:dev release release && npm run compress",
     "compress": "gzip -k -f public/js/main.js && brotli -k -f public/js/main.js",
-    "build": "shadow-cljs -A:dev compile release"
+    "build": "shadow-cljs -A:dev compile release",
+    "shadow-test": "shadow-cljs compile test",
+    "shadow-watch-test": "shadow-cljs watch test"
   },
   "devDependencies": {
     "onchange": "^7.1.0",

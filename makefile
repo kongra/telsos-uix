@@ -11,11 +11,13 @@ release:
 clean:
 	@rm -rf public/js/
 	@rm -f  public/css/main.css
+	@rm -rf test-target/
 	@rm -rf .cpcache/
 
 clean-all:
 	@rm -rf public/js/
 	@rm -f  public/css/main.css
+	@rm -rf test-target/
 	@rm -rf .cpcache/
 	@rm -rf node_modules/
 	@rm -rf .shadow-cljs/
@@ -25,3 +27,9 @@ clj-kondo:
 
 cloc:
 	@cloc . --exclude-list-file=cloc.excluded
+
+shadow-test:
+	@clojure -M:dev -m shadow.cljs.devtools.cli compile test
+
+shadow-watch-test:
+	@clojure -M:dev -m shadow.cljs.devtools.cli watch test

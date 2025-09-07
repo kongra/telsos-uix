@@ -11,19 +11,21 @@
   ($ :div.ui-vspace {:style {:height height}}))
 
 (def ^:private ui-app-class
-  #{"underline"})
+  #{"underline"
+    "select-none"
+    "text-2xl"})
 
 (defui ^:private ui-app []
   (let [[n set-n!] (use-state 0)
 
         cls
-        (into ui-app-class
+        (conj ui-app-class
               (if (even? n)
-                #{"text-blue-500" "text-2xl"}
-                #{"text-red-500"  "text-2xl"}))]
-
-    ($ :div.ui-app
-       {:class cls
+                "text-blue-500"
+                "text-red-500"))]
+    ($ :div
+       {:id       (str ::ui-app)
+        :class    cls
         :on-click #(set-n! (inc n))}
 
        ($ :h1 (str "Hello, UIx! " n))

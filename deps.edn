@@ -1,13 +1,13 @@
 {:deps
- {org.clojure/clojure          {:mvn/version "1.12.2"}
+ {org.clojure/clojure          {:mvn/version "1.12.3"}
   org.clojure/clojurescript    {:mvn/version "1.12.42"}
-  com.github.kongra/telsos-lib {:mvn/version "0.1.490"}
-  com.pitch/uix.core           {:mvn/version "1.4.4"}
-  com.pitch/uix.dom            {:mvn/version "1.4.4"}}
+  com.github.kongra/telsos-lib {:mvn/version "0.1.494"}
+  com.pitch/uix.core           {:mvn/version "1.4.5"}
+  com.pitch/uix.dom            {:mvn/version "1.4.5"}}
 
  :paths ["src/cljs/" "test/"]
 
  :aliases
  {:dev
-  {:extra-deps {thheller/shadow-cljs {:mvn/version "3.2.0"}
+  {:extra-deps {thheller/shadow-cljs {:mvn/version "3.2.1"}
                 binaryage/devtools   {:mvn/version "1.0.7"}}}}}

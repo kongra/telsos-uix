@@ -15,7 +15,7 @@
     "react-dom": "^19.1.1",
     "react-refresh": "^0.17.0",
     "shadow-cljs": "^3.2.0",
-    "tailwindcss": "^4.1.12",
-    "@tailwindcss/cli": "^4.1.12"
+    "tailwindcss": "^4.1.13",
+    "@tailwindcss/cli": "^4.1.13"
   }
 }
